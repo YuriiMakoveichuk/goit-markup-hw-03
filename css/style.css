@@ -14,9 +14,6 @@ h1, h2, h3, h4, h5, h6, p {
 ul, ol {
     margin: 0;
     padding-left: 0;
-}
-
-li {
     list-style-type: none;
 }
 
@@ -27,6 +24,7 @@ a {
 button {
     font-family: inherit;
     cursor: pointer;
+    display: block;
 }
 
 img {
@@ -41,12 +39,17 @@ img {
 
 /* Header */
 
-.header {
+.page-header {
     display: flex;
+    border-bottom: 1px solid #e7e9fc;
+    justify-content: space-between;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
-.header-nav {
+.page-header-nav {
     display: flex;
+    align-items: center;
 }
 
 .logo {
@@ -63,17 +66,25 @@ img {
     color: #2E2F42;
 }
 
-.header-link {
+.page-header-list {
+    display: flex;
+    gap: 40px;
+    margin-left: 76px;
+}
+
+.page-header-link {
     color: #2E2F42;
     font-weight: 500;
 }
 
-.header-link:hover {
+.page-header-link:hover,
+.page-header-link:focus {
     color: #404BBF;
 }
 
-.header-link:focus {
-    color: #404BBF;
+.contacts-list {
+    display: flex;
+    gap: 40px;
 }
 
 .contacts-address {
@@ -84,13 +95,11 @@ img {
     color: #434455;
 }
 
-.contacts-link:hover {
-    color: #404BBF;
-}
-
+.contacts-link:hover,
 .contacts-link:focus {
     color: #404BBF;
 }
+
 
 /* Hero */
 .hero-section {
@@ -103,25 +112,35 @@ img {
     line-height: 1.07;
     text-align: center;
     letter-spacing: 0.02em;
+    width: calc(100%/2);
+    margin: 0 auto;
 }
 
-.button {
+.hero-button {
     background-color: #4D5AE5;
     color: #FFFFFF;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
+    margin: 48px auto;
+    border: none;
+    border-radius: 4px;
+    padding: 16px auto;
+    width: 169px;
+    height: 56px;
 }
 
-.button:hover {
-    background-color: #404BBF;
-}
-
-.button:focus {
+.hero-button:hover,
+.hero-button:focus {
     background-color: #404BBF;
 }
 
 /* Section */
+
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
 
 .section-title {
     color: #2E2F42;
@@ -144,7 +163,6 @@ img {
 
 .section-team {
     background-color: #F4F4FD;
-    height: 732px;
 }
 
 .section-team-list {
