@@ -159,6 +159,21 @@ img {
     letter-spacing: 0.02em;
 }
 
+/* Our advantages */
+
+.advantages-list {
+    display: flex;
+    gap: 24px;  
+}
+
+.advantages-item {
+   width: calc((100% - 72px) / 4);
+}
+
+.advantages-title {
+    padding-bottom: 8px;
+}
+
 /* Team */
 
 .section-team {
