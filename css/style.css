@@ -19,6 +19,7 @@ ul, ol {
 
 a {
     text-decoration: none;
+    display: inline-block;
 }
 
 button {
@@ -53,9 +54,12 @@ img {
 
 /* Header */
 
+.header-section {
+    border-bottom: 1px solid #e7e9fc;
+}
+
 .page-header {
     display: flex;
-    border-bottom: 1px solid #e7e9fc;
     justify-content: space-between;
     padding-top: 24px;
     padding-bottom: 24px;
@@ -80,10 +84,13 @@ img {
     color: #2E2F42;
 }
 
+.logo-header-position {
+    margin-right: 76px;
+}
+
 .page-header-list {
     display: flex;
     gap: 40px;
-    margin-left: 76px;
 }
 
 .page-header-link {
@@ -116,8 +123,11 @@ img {
 
 
 /* Hero */
+
 .hero-section {
     background-color: #2E2F42;
+    padding-top: 188px;
+    padding-bottom: 188px;
 }
 
 .hero-title {
@@ -126,7 +136,7 @@ img {
     line-height: 1.07;
     text-align: center;
     letter-spacing: 0.02em;
-    width: calc(100%/2);
+    max-width: 496px;
     margin: 0 auto;
 }
 
@@ -140,7 +150,7 @@ img {
     border: none;
     border-radius: 4px;
     padding: 16px auto;
-    width: 169px;
+    min-width: 169px;
     height: 56px;
 }
 
@@ -185,7 +195,7 @@ img {
 }
 
 .advantages-title {
-    padding-bottom: 8px;
+    margin-bottom: 8px;
 }
 
 /* Team */
@@ -195,13 +205,12 @@ img {
 }
 
 .team-title {
-    padding-bottom: 72px;
+    margin-bottom: 72px;
 }
 
 .team-list {
     display: flex;
     gap: 24px; 
-    text-align: center;
 }
 
 .team-card {
@@ -210,25 +219,30 @@ img {
     border-radius: 0 0 4px 4px;
 }
 
+.team-block {
+    padding: 32px 0;
+}
+
 .team-card-name {
-    padding-top: 32px;
-    padding-bottom: 8px;
+    text-align: center;
+    margin-bottom: 8px;
 }
 
 .team-card-text {
-    padding-bottom: 32px;
+    text-align: center;
 }
 
 /* Portfolio */
 
 .portfolio-title {
-    padding-bottom: 72px;
+    margin-bottom: 72px;
 }
 
 .portfolio-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
+    column-gap: 24px;
+    row-gap: 48px
 }
 
 .portfolio-card {
@@ -239,15 +253,11 @@ img {
     border-bottom: 1px solid #e7e9fc;
     border-left: 1px solid #e7e9fc;
     border-right: 1px solid #e7e9fc;
+    padding: 32px 16px;
 }
 
 .portfolio-card-list {
-    padding: 32px 16px 8px;
-}
-
-.portfolio-card-text {
-    padding-bottom: 32px;
-    padding-left: 16px;
+    margin-bottom: 8px;
 }
 
 /* Footer */
@@ -263,10 +273,10 @@ img {
     color: #F4F4FD;
 }
 
-.footer-page {
-    width: 264px;
+.footer-item {
+    margin-bottom: 16px;
 }
 
 .footer-text {
-    padding-top: 16px;
+    min-width: 264px;
 }
