@@ -121,6 +121,29 @@ img {
     color: #404BBF;
 }
 
+/* Section */
+
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.section-title {
+    color: #2E2F42;
+    font-size: 36px;
+    line-height: 1.11;
+    text-transform: capitalize;
+    text-align: center;
+    letter-spacing: 0.02em;
+}
+
+.section-title-list {
+    color: #2E2F42;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
 
 /* Hero */
 
@@ -157,30 +180,6 @@ img {
 .hero-button:hover,
 .hero-button:focus {
     background-color: #404BBF;
-}
-
-/* Section */
-
-.section {
-    padding-top: 120px;
-    padding-bottom: 120px;
-}
-
-.section-title {
-    color: #2E2F42;
-    font-size: 36px;
-    line-height: 1.11;
-    text-transform: capitalize;
-    text-align: center;
-    letter-spacing: 0.02em;
-}
-
-.section-title-list {
-    color: #2E2F42;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
 }
 
 /* Our advantages */
