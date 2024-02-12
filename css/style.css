@@ -61,8 +61,6 @@ img {
 .page-header {
     display: flex;
     justify-content: space-between;
-    padding-top: 24px;
-    padding-bottom: 24px;
 }
 
 .page-header-nav {
@@ -91,6 +89,8 @@ img {
 .page-header-list {
     display: flex;
     gap: 40px;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .page-header-link {
