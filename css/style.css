@@ -89,13 +89,13 @@ img {
 .page-header-list {
     display: flex;
     gap: 40px;
-    padding-top: 24px;
-    padding-bottom: 24px;
 }
 
 .page-header-link {
     color: #2E2F42;
     font-weight: 500;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .page-header-link:hover,
@@ -114,6 +114,8 @@ img {
 
 .contacts-link {
     color: #434455;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .contacts-link:hover,
